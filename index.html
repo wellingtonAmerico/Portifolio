@@ -1,0 +1,267 @@
+<!--<?php
+    if(isset($_POST['nome'])) {
+        if(enviarMensagem($_POST)) {
+            $mensagem = "Mensagem enviada com sucesso.";
+        } else {
+            $mensagem = "Erro no envio da mensagem";
+        }
+    }
+?>-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Wellington Américo - Portfólio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="_css/global.css">
+        <script type="text/javascript" src="_js/jquery.min.js"></script> 
+        <script type="text/javascript" src="_js/funcoes.js"></script> 
+    </head>    
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="#home"><img src="_img/logowa.png">
+                <h1>WELLINGTON AMÉRICO</h1>
+                <h2>Grad. Eng. de Computação</h2></a>
+            </div>
+
+            <nav id="topo">
+                <ul>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                    <li><a href="#portfolio">PORTFÓLIO</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="home">
+                <div id="destaque">
+                    <h1 id="semscript">Wellington Américo_</h1>
+
+                    <h1 id="nome"></h1>
+                    <noscript>
+                        <h1 class="nome">Wellington Américo</h1>
+                    </noscript>
+                    <h1 id="pisca">_</h1>
+                    <h2>Portfólio</h2>
+                </div>
+                <img src="_img/fundo.png" width="40%"/>
+            </article>
+
+            <article id="sobre">
+                <br>
+                <h3>Sobre</h3>
+                    
+                <div class="svg-container">
+                    <svg>
+                        <polygon points="50,25 70,430 270,390 250,40"/>
+                        <polygon points="350,60 330,310 825,410 850,75"/>
+                    </svg>
+                </div>
+                
+                <div id="principal">
+                    <img id="foto" src="_img/perfil.png"/>
+                    <a href="https://github.com/wellingtonAmerico">
+                        <img id="card" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wellingtonAmerico&layout=compact&langs_count=7&theme=merko"/>
+                    </a>
+                </div>
+
+                <div class="texto">
+                    <p>Oláa! Meu nome é <b>Wellington</b> e este é meu Portfólio!</p>
+                    <p>Sou Técnico em Informática e estou me graduando em Engenharia de Computação.</p>
+                    <p>Estou sempre em busca de evolução e aprendizado, e aqui reúno projetos de Web 
+                        Development durante este processo.</p>
+                </div>
+            </article>
+
+            <article id="tecnologias">
+                <br>
+                <h3>Tecnologias</h3>
+
+                <div class="svg-container">
+                    <svg height="470" width="100%">
+                        <polygon points="50,25 70,430 270,390 250,40"/>
+                        <polygon points="350,60 330,310 825,410 850,75"/>
+                    </svg>
+                </div>
+
+                <nav id="nav-tec">
+                    <ul>
+                        <li id="html"><b>HTML e CSS</b></li>
+                        <li id="js"><b>JavaScript</b></li>
+                        <li id="php"><b>PHP</b></li>
+                        <li id="sql"><b>SQL</b></li>
+                        <li id="c"><b>C e C++</b></li>
+                        <li id="python"><b>Python</b></li>
+                    </ul>
+                </nav>
+
+                <div class="texto">
+                    <div>
+                        <noscript>
+                            <style>
+                                #p { display: none;}
+                            </style>
+                        </noscript>
+                        <p id="p">Passe o mouse pelo menu lateral.</p>
+                    </div>
+                    <div  class="html">
+                        <img src="_img/html.png"/>
+                        <p>Linguagens de marcação e estilo, utilizadas para a criação do 
+                            Front-End, páginas estáticas, no desenvolvimento Web. 
+                            (o que você vê nesta e em todas as outras paginas da internet <span>&#128521;</span>).</p>
+                    </div>
+                    <div class="js">
+                    <img src="_img/js.png"/>
+                        <p>Último elemento da tríade do desenvolvimento Front-End, mas também 
+                            pode ser utilizada no Back-End (lado do servidor). Esta 
+                            linguagem de programação que dá vida a página, além de processar 
+                            e transformar dados enviados e recebidos. Ela que é responsável 
+                            pelas funcionalidades dinâmicas dos sites, como autocompletes e 
+                            movimentos. Como exemplos, temos meu nome "sendo escrito" e este 
+                            menu lateral.
+                        </p>
+                    </div>
+                    <div class="php">
+                    <img src="_img/php.png"/>
+                        <p>Esta linguagem de script é aplicada em automatizações da página 
+                            assim como o Javascript e o Python, no entanto é mais utilizada
+                            no Back-End. Esta linguagem de programação é uma das mais utilizadas
+                            no mundo.
+                        </p>
+                    </div>
+                    <div class="sql">
+                    <img src="_img/sql.png"/>
+                        <p>Parâmetro para trabalhar com Bancos de Dados relacionais. Utilizando 
+                            o SQL que criamos um Banco de dados e manipulamos os dados nele contido.
+                        </p>
+                    </div>
+                    <div class="c">
+                    <img src="_img/c.png"/>
+                        <p>A linguagem de programação C é retratada como a linguagem mãe, por diversas
+                            outras linguagens surgirem à utilizando como base. Tanto o C quanto o C++
+                            são programação orientado a objeto, paradigmas de desenvolvimentomuito 
+                            utilizado atualmente.
+                        </p>
+                    </div>
+                    <div class="python">
+                    <img src="_img/python.png"/>
+                        <p>Extremamente versátil, podendo ser utilizada para construir 
+                            aplicativos, fazer análise de dados, desenvolver programas, 
+                            inteligência artificial, criar jogos, e muitas outras atividades.
+                            Uma das linguagens de programação mais utilizadas no mundo, assim 
+                            como o PHP.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="portfolio">
+                <br>
+                <h3>Portfólio</h3>
+
+                <noscript>
+                    <div class="aviso">
+                        <p>
+                            Seu navegador não suporta esta tecnologia. 
+                            <a href="portifolio.html">Clique aqui</a> 
+                            para melhor visualização do conteúdo ou habilite 
+                            o JavaScript de seu navegador.
+                        </p>
+                    </div>
+                </noscript>
+
+                <div id="carousel">
+                    <figure id="spinner">
+                        <img src="_img/projeto1.png" alt>
+                        <img src="_img/projeto2.png" alt>
+                        <img src="_img/projeto3.png" alt>
+                        <img src="_img/projeto1.png" alt>
+                        <img src="_img/projeto2.png" alt>
+                        <img src="_img/projeto3.png" alt>
+                    </figure>
+                </div>
+                <span style="float:left" class="ss-icon" onclick="girarSpin('-')">&lt;</span>
+                <span style="float:right" class="ss-icon" onclick="girarSpin('')">&gt;</span>
+            </article>
+
+            <article id="contato">
+                <br>
+                <h3>Contato</h3>
+
+                <div class="svg-container">
+                    <svg height="470" width="100%">
+                        <polygon points="50,25 70,380 270,340 250,40"/>
+                        <polygon points="350,60 330,260 825,360 850,75"/>
+                    </svg>
+                </div>
+
+                <nav id="nav-tec">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <a href="https://www.linkedin.com/in/wellington-am%C3%A9rico/">
+                            <li><b><img src="_img/linkedin.png"/>LinkedIn</b></li>
+                        </a>
+                        <a href="https://github.com/wellingtonAmerico">
+                            <li><b><img src="_img/github.png"/>GitHub</b></li>
+                        </a>
+                        <a href="#">
+                            <li><b><img src="_img/instagram.png"/>Instagram</b></li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <div id="mail">
+                    <h4>E-Mail</h4>
+                    <form id="form" action="#" method="post">
+                        <noscript>
+                            <style>
+                                #lbl_nome {top: 0;left: 95px;font-size: 0.8em;}
+                            </style>
+                        </noscript>
+                        <input type="text" name="nome" id="nome" size="40" maxlength="100" required>
+                        <label for="nome" id="lbl_nome">Nome:</label>
+
+                        <noscript>
+                            <style>
+                                #lbl_mail {top: 59px;left: 95px;font-size: 0.8em;}
+                            </style>
+                        </noscript>
+                        <input type="email" name="email" id="email" maxlength="30" required>
+                        <label for="email" id="lbl_mail">E-mail:</label>
+
+                        <noscript>
+                            <style>
+                                #lbl_mensagem {top: 118px;left: 95px;font-size: 0.8em;}
+                            </style>
+                        </noscript>
+                        <textarea name="mensagem" id="mensagem" requires></textarea>
+                        <label for="mensagem" id="lbl_mensagem">Mensagem:</label>
+
+                        <input type="submit" value="Enviar" name="enviar" id="enviar">
+                    <!--    
+                        <?php
+                            if( isset($mensagem) ) {
+                                echo "<p>" . $mensagem . "</p>";
+                            }
+                        ?>   -->                  
+                    </form>
+                </div>
+            </article>
+
+            <footer>
+                <p>Todos os direitos reservados &copy; Wellington Américo</p>
+            </footer>
+        </main>
+    </body>
+</html>
