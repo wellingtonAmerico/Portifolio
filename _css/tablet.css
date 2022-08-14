@@ -1,0 +1,79 @@
+header {
+    height: 150px;
+}
+
+/* Cabeçalho */
+#logo {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#topo {
+    float: none;
+    margin: 0 auto;
+}
+/* Fundo SGV*/
+.svg-container {
+    visibility: hidden;
+}
+
+.texto {
+    float: none;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* home */
+#destaque {
+    width: 320px;
+    float: none;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#home img {
+    float: none;
+    margin:  auto;
+    padding-top: 50px;
+}
+
+#home {
+    text-align: center;
+}
+
+/* Sobre */
+#principal {
+    width: 50%;
+    margin: auto;
+    margin-top: -450px;
+    margin-bottom: 50px;
+    position: relative; 
+}
+#foto {
+    width: 80%;
+    margin: auto;
+}
+#card {
+    width: 100%;
+}
+
+/* Tecnologias */
+#tecnologias .sub_nav {
+    margin: auto;
+    margin-top: -430px;
+}
+#tecnologias .texto {
+    margin: auto;
+    margin-top: -400px;
+    margin-right: 5px;
+}
+
+
+/* Portfolio */
+
+
+/* Contato */
+label {
+    background-color: rgb(20, 20, 20);
+}

@@ -1,22 +1,23 @@
-$(document).ready(function(){
 /* Escrever Nome */
-  var texto = "Wellington Américo";
-  var result;
+var texto = "Wellington Américo";
+var result;
 
-  var count = 0;
-  function digitar() {
-    result = document.getElementById("nome");
+var count = 0;
+function digitar() {
+  result = document.getElementById("nome");
+  window.setTimeout(function() { inserir(texto[count]) }, 200);
+}
+
+function inserir(letra) {
+  result.innerHTML += letra;
+  count++;
+  if(count < texto.length)
     window.setTimeout(function() { inserir(texto[count]) }, 200);
   }
 
-  function inserir(letra) {
-    result.innerHTML += letra;
-    count++;
-    if(count < texto.length)
-      window.setTimeout(function() { inserir(texto[count]) }, 200);
-  }
+window.onload = digitar;
 
-  window.onload = digitar;
+$(document).ready(function(){
 
 /* HTML SHOW/HIDE */
     $("#html").mouseover(function(){
